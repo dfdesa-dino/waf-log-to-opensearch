@@ -6,3 +6,9 @@ Con este repositorio podras:
 - Configurar la rotacion de logs
 - Configurar Opensearch para la creacion de dashboards
 - Visualizar los datos
+
+Requiere tenet configurada AWS CLI
+
+## Desplegar Opensearch
+
+Para desplegar Opensearch ejecutar el script deploy-opensearch-cluster.sh
