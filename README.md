@@ -17,8 +17,8 @@ Para definir parametros de tamaNo y caracteristicas para el cluster, consultar [
 
 ## Enviar log desde S3 a Opensearch
 
-
-
+Modificar variables de entorno en /lambda-log-handler/log-exporter.py
+ 
 
 ## Configurar rotacionde log
 
