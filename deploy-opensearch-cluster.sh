@@ -1,12 +1,11 @@
 
 #!/bin/bash
 
+# Elasticsearch version
+export ES_VERSION="OpenSearch_1.0"
 
 read -p "Ingresa el nombre del Dominio (Opensearch Cluster): " domain 
 export ES_DOMAIN_NAME=$domain
-
-# Elasticsearch version
-export ES_VERSION="OpenSearch_1.0"
 
 echo  "Ingresar tipo de instancia : \n " 
 cat instance.txt
@@ -26,7 +25,6 @@ export ES_DOMAIN_USER=$user
 
 read -p "Ingresa una password :" pass
 export ES_DOMAIN_PASSWORD=$pass
-
 
 envsubst < domain.json > domain.json
 aws opensearch create-domain --cli-input-json  file://domain.json
