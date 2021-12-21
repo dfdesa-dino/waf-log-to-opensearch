@@ -23,11 +23,13 @@ Para definir parametros de tamaNo y caracteristicas para el cluster, consultar [
 ## Configurar rotacionde log
 
 ## Configurar Opensearch para recibir logs
-Procedemos a loguearnos a la GUI de nuestro cluste http://OPENSEARCH-DOMAIN/_dashboard/  y en Menu > Dev Tools , pegamos el contenido de file://opensearch/index-template.json y lo "ejecutamos"(HTTP PUT). 
-![de esta manera](https://raw.githubusercontent.com/dfdesa-dino/waf-log-to-opensearch/main/assets/Dev%20Tools%20OpenSearch.png?raw=true)
+
+Procedemos a loguearnos a la GUI de nuestro cluster http://OPENSEARCH-DOMAIN/_dashboard/  y en Menu > Dev Tools , pegamos el contenido de file://opensearch/index-template.json y lo "ejecutamos" (HTTP PUT). Y procuramos recibir ack : true.
+![devtool](https://raw.githubusercontent.com/dfdesa-dino/waf-log-to-opensearch/main/assets/Dev%20Tools%20OpenSearch.png?raw=true)
 
 ## Importar Dashboards y Vizualizaciones
 
 Con el server ya configurado y con logs indexados. Procedemos a importar los daschboards y las vizualizaciones desde Menu > Stack Management > Saved Objects Import, Seleccionamos Request action on conflict y procedemos a importar seleccionando el nombre de nuestro index pattern.
-Las dashboards son credisto [de](https://github.com/aws-samples/aws-waf-ops-dashboards)
+Las dashboards son credito [de](https://github.com/aws-samples/aws-waf-ops-dashboards)
+![dashboard](https://raw.githubusercontent.com/dfdesa-dino/waf-log-to-opensearch/main/assets/Dashboard%20OpenSearch.png?raw=true)
 
