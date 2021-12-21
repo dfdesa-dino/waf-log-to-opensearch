@@ -1,0 +1,36 @@
+PUT _template/waf-all
+{
+    "index_patterns" : [
+      "waf*"
+    ],
+    "settings" : {
+      "index" : {
+        "number_of_shards" : "1"
+      }
+    },
+    "mappings" : {
+      "properties" : {
+        "httpSourceId" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+        "httpSourceName" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+        "webaclId" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+        "terminatingRuleId" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+        "terminatingRuleType" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+        "ruleGroupList" :
+          { "properties" :
+                { "keyword" : {"type" : "keyword", "fields" : {"keyword" : {"type" : "keyword"}}}}
+              },
+        "httpRequest" : {
+          "properties" : {
+            "clientIp" : {"type" : "keyword","fields" : { "keyword" : {"type" : "ip"}}},
+            "country" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}},
+            "httpVersion" : { "type" : "keyword","fields" : { "keyword" : {"type" : "keyword"}}}
+          }
+        },
+        "timestamp" : {
+          "format" : "epoch_millis",
+          "type" : "date"
+        }
+      }
+    },
+    "aliases" : { }
+}
