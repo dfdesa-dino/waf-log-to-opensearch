@@ -23,8 +23,8 @@ Para definir parametros de tamaNo y caracteristicas para el cluster, consultar [
 ## Configurar rotacionde log
 
 ## Configurar Opensearch para recibir logs
-Procedemos a loguearnos a la GUI de nuestro cluste http://OPENSEARCH-DOMAIN/_dashboard/  y en Menu > Dev Tools , pegamos el contenido de file://opensearch/index-template.json y lo ejecutamos. 
-![devtools](./assets/DevToolsOpenSearch.png)
+Procedemos a loguearnos a la GUI de nuestro cluste http://OPENSEARCH-DOMAIN/_dashboard/  y en Menu > Dev Tools , pegamos el contenido de file://opensearch/index-template.json y lo "ejecutamos"(HTTP PUT). 
+![devtools](./assets/DevToolsOpenSearch.png?raw=true)
 
 ## Importar Dashboards y Vizualizaciones
 
