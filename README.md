@@ -24,7 +24,7 @@ Para definir parametros de tamaNo y caracteristicas para el cluster, consultar [
 
 ## Configurar Opensearch para recibir logs
 Procedemos a loguearnos a la GUI de nuestro cluste http://OPENSEARCH-DOMAIN/_dashboard/  y en Menu > Dev Tools , pegamos el contenido de file://opensearch/index-template.json y lo "ejecutamos"(HTTP PUT). 
-![alt text](./assets/DevToolsOpenSearch.png?raw=true)
+![de esta manera](https://raw.githubusercontent.com/dfdesa-dino/waf-log-to-opensearch/main/assets/Dev%20Tools%20OpenSearch.png?raw=true)
 
 ## Importar Dashboards y Vizualizaciones
 
