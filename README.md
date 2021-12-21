@@ -18,7 +18,8 @@ Para definir parametros de tamaNo y caracteristicas para el cluster, consultar [
 ## Enviar log desde S3 a Opensearch
 
 Modificar variables de entorno en /lambda-log-handler/log-exporter.py
- 
+![log-to-es](https://raw.githubusercontent.com/miztiik/serverless-s3-to-elasticsearch-ingester/master/images/serverless-s3-to-es-ingester-valaxy-miztiik.png)
+[Credito e inspiracion](https://github.com/miztiik/serverless-s3-to-elasticsearch-ingester)
 
 ## Configurar rotacionde log
 
