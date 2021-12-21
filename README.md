@@ -7,7 +7,7 @@ Con este repositorio podras:
 - Configurar Opensearch para el analisis de los datos recolectados
 - Visualizar los datos
 
-Requiere tener configurada AWS CLI y default zone 
+Requiere tener configurada AWS CLI 
 
 ## Desplegar Opensearch
 
